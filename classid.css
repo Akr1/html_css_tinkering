@@ -1,0 +1,33 @@
+/* Class selector. Preceded by a #
+  used to identify ONE element.*/
+#top {
+  background-color: #ccc;
+  padding: 20px
+}
+/* This right here basically says: When h1 is used in an element of 
+class top, the color is #ff0, and if p is used in an element of class top
+then color: red and font-weight: bold. This is what we call NESTING */
+#top h1 {
+  color: #ff0;
+}
+
+#top p {
+  color: red;
+  font-weight: bold;
+}
+/* Id selector. Preceded by a .
+used to identify more than one element.*/
+.intro {
+  color: red;
+  font-weight: bold;
+}
+
+/*
+
+Grouping: When several selectors have the same properties.
+
+h2, .thisOtherClass, .yetAnotherClass {
+    color: red;
+}
+
+*/

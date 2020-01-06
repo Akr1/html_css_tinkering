@@ -1,0 +1,14 @@
+/*Bolted on to selectors to specify a state or relation to the selector.*/
+/*Takes the form of selector:pseudo_class{property:value;}*/
+
+/*Links
+  link: targets unvisited links
+  visited: targets visited links*/
+/*So here, the unvisited links will be blue and visited will be purple*/
+a:link {
+    color: blue;
+}
+
+a:visited {
+    color: purple;
+}

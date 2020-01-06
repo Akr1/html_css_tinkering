@@ -1,0 +1,45 @@
+/*Pseudo elements suck on to selectors like pseudo classes taking
+the form:
+  selector:pseudoelement{
+    property: value;}*/
+
+/*First letters and First lines. 
+The first-letter pseudo element applies to the first
+letter inside a box and first-line to the top-most
+displayed line in a box.*/
+
+p {
+  font-size: 12px;
+}
+
+p:first-letter {
+  font-size: 24px;
+  float: left;
+}
+
+p:first-line {
+  font-weight: bold;
+}
+
+/*Before and After content
+Used in conjunction with the content property to place content
+either side of a box without touching the HTML
+
+Remember to use this sparingly as content should be HTML. 
+So for example, to display content to use solely for presentation*/
+
+blockquote:before {
+  content: open-quote;
+}
+
+blockquote:after {
+  content: close-quote;
+}
+
+li:before {
+  content: "POW! ";
+}
+
+p:before {
+  content: url(images/jam.jpg);
+}

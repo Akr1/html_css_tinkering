@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--Title appears in the pestana or window header not in the actual page.-->
+  <title>My first web page</title>
+</head>
+
+<body>
+  <!-- Headers range from h1 to h6 in descending order of biggness?-->
+  <h1 id="header1">My first web page</h1>
+  <h2>What this is</h2>
+  <p> A simple page put together using HTML</p>
+  <h2>Why this is</h2>
+  <!-- ul for unordered list ol for ordered lists-->>
+  <ul>
+    <li>To learn HTML</li>
+    <li>To show off
+      <ol>
+        <li>To my boss</li>
+        <li>To my friends</li>
+        <li>To my cat</li>
+        <li>To the little talking duck in my brain</li>
+      </ol>
+    </li>
+    <li>Because I've fallen in love with my computer and want to give her
+      some HTML loving.</li>
+  </ul>
+  <h2>Where to find the tutorial</h2>
+  <p><a href="http://www.htmldog.com">HTML Dog</a></p>
+  <p><a href="#header1">Go to the header number 1</a></p>
+
+  <table>
+    <!--tr stands for table row, td is for a data cell in the row-->
+    <tr>
+      <td>Row 1, cell 1</td>
+      <td>Row 1, cell 2</td>
+      <td>Row 1, cell 3</td>
+    </tr>
+    <tr>
+      <td>Row 2, cell 1</td>
+      <td>Row 2, cell 2</td>
+      <td>Row 2, cell 3</td>
+    </tr>
+    <tr>
+
+      <td>Row 3, cell 1</td>
+      <td>Row 3, cell 2</td>
+      <td>Row 3, cell 3</td>
+    </tr>
+    <tr>
+      <td>Row 4, cell 1</td>
+      <td>Row 4, cell 2</td>
+      <td>Row 4, cell 3</td>
+    </tr>
+  </table>
+  <!--better to specify width and height here as it calculates it when the page 
+  loads compared to not specifying and calculating it when the image loads.
+  alt stands for alternative text-->
+  <img src="http://www.htmldog.com/badge1.gif" width="120" height="90" alt="HTML Dog">
+  <!--This creates a textbox area-->
+  <textarea rows="5" cols="20">A big load of text</textarea>
+  <!--Drop down window with options. If attribute value isn't defined, the text 
+  written as option will be used. E.g. Option 1 will have a value of "Option 1"
+  where as Option 3 will have a value of "third option"-->
+  <select>
+    <option>Option 1</option>
+    <option>Option 2</option>
+    <option value="third option">Option 3</option>
+  </select>
+</body>
+
+</html>

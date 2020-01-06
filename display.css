@@ -1,0 +1,32 @@
+/*Most fundamental types of display are: inline, block and none.
+They can be manipulated with the display property and the values inline, block
+and none wow surprise.*/
+
+/*Inline does just what it says, stuff is displayed in the flow of
+a line. */
+
+li { display: inline }
+
+/*For example, this would make all list items in a list to appear 
+next to each other rather than on top of each other. */
+
+/*Block makes a box standalone, fitting the entire width of
+its containing box, with an effective line break before and after it.
+Allows greater manipulation of height, margins and padding. Heading and paragraph
+elements are examples of elements that are displayed like this by default
+in browsers.*/
+
+/*This would make all links in nav large clickable blocks.*/
+#navigation a {
+  display: block;
+  padding: 20px 10px;
+}
+
+/*None
+  doesn't display a box at all, used with dynamic effects? */
+
+  #navigation, #related_links { display: none }
+
+/*Tables It differs from normal table tag in HTML in that here you
+can construct tables by columns, as opposed to the row based method
+used in HTML. Apparently, we should still use HTML.*/

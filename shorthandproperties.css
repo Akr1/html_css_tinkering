@@ -1,0 +1,46 @@
+/*There are css properties that allow a string of values,
+replacing the need for a number of properties. These
+are represented by values separated by spaces*/
+
+
+/*Margins and Padding*/
+/*
+p {
+    margin-top: 1px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+Can be summed up as:
+*/
+
+p {
+  margin: 1px 5px 10px 20px;
+}
+/*It is also possible to just state 2 values where
+the first value will be top and bottom, whereas
+the second value will be right and left*/
+
+/*Borders*/
+/*Recall that a border has the following properties:
+  border-width, border-color, border-style. So traditionally,
+  it would look like:
+  p {
+    border-width: 1px;
+    border-color: red;
+    border-style: solid;
+}
+  but with short hand properties, we can: */
+
+  p {
+    border: 1px red solid;
+}
+
+/*Font related properties can also be gathered together
+with the font property: This combines, font-style, font-weight,
+font-size, line-height, font-family.
+*/
+
+p {
+  font: italic bold 12px/2 courier;
+}

@@ -1,0 +1,61 @@
+/*So according to htmldog, the way CSS layout works is:
+Take a chunk of your page and shove it wherever you choose. 
+These chunks can be placed absolutely or relative to another
+chunk.*/
+
+/*Positioning
+The position property is used to define wheter a box is 
+absolute (pul;s a box out of the normal flow of the HTML and 
+delivers it to a world all of its own. Can be placed anywhere
+on the page using properties: top, right, bottom and left),
+relative (like static, but the box can be offset from its original position with 
+the properties top, right, bottom and left), 
+static (default value, renders box in the normal order 
+of things. As they appear in the css) 
+or fixed (behaves like absolute, but will absolutely
+poisiton a box in reference to the browser window as 
+opposed to the WEB PAGE, so fixed boxes should stay exactly
+where they are on the screen even when the page is scrolled.).*/
+
+/*Layout using absolute positioning*/
+
+#navigation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+}
+
+#navigation2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px;
+}
+
+#content {
+  margin: 0 200px; /* setting top and bottom margin to 0 and right and left margin to 200px */
+}
+
+/*Downside to absolute positioned box: Because they live
+in a world of their own, there is no way of
+accurately determining where they end.*/
+
+/*Floating
+  Floating box will shift it to the right or left of a line, with
+  the surrounding content flowing around it. Normally used
+  to shift around smaller chunks within a page. Using float: left or float: right.*/
+
+#navigationfloat {
+  float: left;
+  width: 200px;
+}
+
+#navigation2float {
+  float: right;
+  width: 200px;
+}
+
+#footer {
+  clear: both;
+}
